@@ -1,0 +1,67 @@
+extends components/layout.pug
+
+block styles
+
+block content
+    section.hero
+        .parallax-container
+            .parallax
+                img.dark(src="/images/office.jpg")
+            .full-height.valign-wrapper
+                .container
+                    h5.center.light.white-text Welcome to
+                    h1.center.light.white-text Developer Student Club
+                    h4.center.light.white-text G. H. Raisoni College of Engineering, Nagpur
+                    h5.center.light.white-text Powered by Google Developers
+    section
+        .container
+            .row
+                .col.s12
+                    h3.light.center.blue-text Upcoming
+                .row
+                    .col.s12.m6.l4
+                        .card
+                            .card-image
+                                img(src="/images/office.jpg" alt="")
+                            .card-content
+                                span.card-title Web Development Workshop
+                                //- <p class="light">An introductory workshop on Game Development was conducted at GHRCE on March 9, 2019.</p>
+                            .card-action
+                                a.btn.btn-flat.blue-text(href="#!") Learn more
+                    .col.s12.m6.l4
+                        .card
+                            .card-image
+                                img(src="/images/office.jpg" alt="")
+                            .card-content
+                                span.card-title Android Development Workshop
+                                //- <p class="light">An introductory workshop on Game Development was conducted at GHRCE on March 9, 2019.</p>
+                            .card-action
+                                a.btn.btn-flat.blue-text(href="#!") Learn more
+                    .col.s12.m6.l4
+                        .card
+                            .card-image
+                                img(src="/images/office.jpg" alt="")
+                            .card-content
+                                span.card-title Machine Learning Workshop
+                                //- <p class="light">An introductory workshop on Game Development was conducted at GHRCE on March 9, 2019.</p>
+                            .card-action
+                                a.btn.btn-flat.blue-text(href="#!") Learn more
+    section.hero
+        .parallax-container
+            .parallax
+                img.dark(src="/images/office.jpg")
+            .full-height.valign-wrapper
+                .container
+                    //- <h4 class="center light white-text">Welcome to</h4>
+    section
+        .container
+            .row
+                .col.s12
+                    h3.light.blue-text About Developer Student Clubs
+                .col.s12.m6
+                    p.light.flow-text
+                        | Developer Student Clubs train thousands of student developers globally and work with their communities to solve real-life problems. Check out some of our stories to learn more.
+                .col.s12.m6.center
+                    img.logo(src="/images/dsclogo.png", alt="")
+
+block scripts

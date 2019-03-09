@@ -1,0 +1,23 @@
+extends components/layout.pug
+
+block styles
+
+block content
+    section
+        h1.center.light.blue-text Events
+        p.center.light.flow-text A gallery of our recent events
+    section
+        .container
+            .row
+                .col.s12.m6.l4
+                    .card
+                        .card-image
+                            img(src="/images/office.jpg" alt="")
+                        .card-content
+                            span.card-title Game Development Workshop
+                            p.light
+                                | An introductory workshop on Game Development was conducted at GHRCE on March 9, 2019.
+                        .card-action
+                            a.btn.btn-flat.blue-text(href="#!") Learn more
+
+block scripts

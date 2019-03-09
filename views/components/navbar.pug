@@ -1,0 +1,25 @@
+.navbar-fixed
+    nav.white
+        .nav-wrapper
+            a.brand-logo.blue-text.light.hide-on-med-and-down(href="/") Developer Student Club
+                img.left(src="/images/dsclogo.png", alt="")
+            
+            a.brand-logo.blue-text.light.hide-on-large-only(href="/")
+                img.left(src="/images/dsclogo.png", alt="")
+                
+            a.sidenav-trigger.blue-text(href="#" data-target="mobile-demo")
+                i.material-icons menu
+            ul.right.hide-on-med-and-down
+                li
+                    a.blue-text(href="/") Home
+                li
+                    a.blue-text(href="/events") Events
+                li
+                    a.blue-text(href="/team") Team
+ul#mobile-demo.sidenav
+    li
+        a.blue-text(href="/") Home
+    li
+        a.blue-text(href="/events") Events
+    li
+        a.blue-text(href="/team") Team
