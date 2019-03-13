@@ -1,0 +1,36 @@
+extends components/layout.pug
+
+block styles
+    link(rel="stylesheet", href="/css/certificate.css")
+
+block content
+
+   
+        
+    
+    section.container
+        if certificate
+            h3.center Certificate
+            p.center
+                a.btn(href="javascript:printCertificate()") Print
+
+
+            #certificate.center
+                img#background(src="" alt="")
+                h3#name #{certificate.name}
+                p#event #{certificate.event}
+                p#date #{certificate.dateFormatted}
+                #qr
+        
+        else
+            h3.center No certificate found.
+            p.center
+                a.btn(href="/events") Events
+
+
+    
+block scripts
+    script(src="/js/lib/qrcode.js")
+    script(src="/js/lib/imagesloaded.pkgd.min.js")
+    script(src="/js/lib/html2pdf.bundle.js")
+    script(src="/js/init/certificate.js")
