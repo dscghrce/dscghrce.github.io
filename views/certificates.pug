@@ -1,0 +1,18 @@
+extends components/layout.pug
+
+block styles
+
+block content
+    section.container
+        h3.center Certificates
+        h4.center #{certificates[0].event}
+        h5.center #{certificates[0].dateFormatted}
+
+    section.container
+        .row
+            .col.s12
+                .collection
+                    each certificate in certificates
+                        a.collection-item(href="/certificate/"+certificate._id) #{certificate.name}    
+
+block scripts
