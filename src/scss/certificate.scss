@@ -1,8 +1,34 @@
 #certificate {
-    width: 200px;
-    height: 200px;
-    background: red;
+    width: 295mm;
+    height: 206mm;
+
+    background: url('/images/certificate.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     * {
         position: absolute;
+        white-space: nowrap;
+    }
+    #name {
+        margin-top: 122mm;
+        margin-left: 30mm;
+        
+    }
+    #event {
+        margin-top: 146mm;
+        margin-left: 125mm;
+    }
+    #date {
+        margin-top: 180mm;
+        margin-left: 52mm;
+    }
+    #qr {
+        margin-top: 160mm;
+        margin-left: 247mm;
+        img{
+            border: 4px solid #ffffff;
+            border-radius: 2px;
+        }
+
     }
 }

@@ -8,17 +8,17 @@ block content
    
         
     
-    section.container
+    section
         if certificate
             h3.center Certificate
             p.center
                 a.btn(href="javascript:printCertificate()") Print
 
-
-            #certificate.center
-                img#background(src="" alt="")
+            #certificate
+                    
+                
                 h3#name #{certificate.name}
-                p#event #{certificate.event}
+                h5#event #{certificate.event}
                 p#date #{certificate.dateFormatted}
                 #qr
         
